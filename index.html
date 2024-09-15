@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto Modular</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Archivos/css/styles.css">
+    <link rel="stylesheet" href="Archivos/css/components/header.css">
+    <link rel="stylesheet" href="Archivos/css/components/footer.css">
+    <link rel="stylesheet" href="Archivos/css/components/main-content.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Contenedor para el encabezado -->
+    <div id="header-container"></div>
+    
+    <!-- Contenedor para el contenido principal -->
+    <div id="main-content-container"></div>
+    
+    <!-- Contenedor para el pie de página -->
+    <div id="footer-container"></div>
+
+    <script src="Archivos/js/components/header.js"></script>
+    <script src="Archivos/js/components/footer.js"></script>
+    <script src="Archivos/js/components/main-content.js"></script>
+    <script src="Archivos/js/script.js"></script>
+    <script>
+        // Función para cargar componentes HTML
+        function loadComponent(url, containerId) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(containerId).innerHTML = data;
+                });
+        }
+
+        // Cargar los componentes al iniciar
+        document.addEventListener('DOMContentLoaded', function() {
+            loadComponent('Archivos/components/header.html', 'header-container');
+            loadComponent('Archivos/components/main-content.html', 'main-content-container');
+            loadComponent('Archivos/components/footer.html', 'footer-container');
+        });
+    </script>
+</body>
+</html>
