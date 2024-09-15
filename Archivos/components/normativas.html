@@ -1,61 +1,167 @@
-<section id="normativas" class="py-8 px-4 bg-gray-100">
+<!-- Título de la sección -->
+<section class="bg-blue-800 text-white py-8">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-2">Normativas Aplicables</h2>
+    </div>
+</section>
+
+<!-- Sección de normativas aplicables -->
+
+<section id="normativas" class="py-10 bg-gray-100">
+
+
     <div class="container mx-auto">
-        <h2 class="text-3xl font-bold mb-6 text-gray-800">Normativas Aplicables</h2>
-        <div class="space-y-6">
-            <!-- Normativa 1 -->
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <h3 class="text-xl font-semibold mb-2 text-gray-700">Aspectos Éticos y Legales del Manejo de la Información</h3>
-                <p class="mb-4 text-gray-600">Descripción breve de los aspectos éticos y legales relacionados con el manejo de la información.</p>
-                <a href="enlace-a-documento.html" class="text-blue-600 hover:text-blue-800">Leer más</a>
+
+
+        <!-- Sección Aspectos Éticos y Legales -->
+        <div class="container mx-auto mb-8">
+            <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">Aspectos Éticos y Legales</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Tarjeta Aspectos Éticos -->
+                <div
+                    class="bg-white p-6 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-xl mb-8">
+                    <div class="relative">
+                        <!-- Imagen de la normativa -->
+                        <div class="h-48 overflow-hidden rounded-t-lg">
+                            <img src="Archivos/img/etica.jpg" alt="Aspectos Éticos" class="w-full h-full object-cover">
+                        </div>
+
+                        <!-- Overlay opcional para agregar un efecto de color o más opacidad -->
+                        <div class="absolute inset-0 bg-white bg-opacity-30 rounded-t-lg"></div>
+
+                        <!-- Contenido de la normativa -->
+                        <div class="relative z-10 p-4">
+                            <h3 class="text-xl font-semibold mb-4 text-gray-700">Aspectos Éticos del Manejo de la
+                                Información</h3>
+                            <p class="text-gray-600 mb-4">Asegura la integridad y confidencialidad en el manejo de
+                                datos, promoviendo prácticas responsables y evitando conflictos de interés.</p>
+                            <!-- Botón -->
+                            <button
+                                class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500 transition-colors duration-300"
+                                data-pdf="Eticos.pdf" data-normativa="Aspecto Ético">Leer más</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Tarjeta Aspectos Legales -->
+                <div
+                    class="bg-white p-6 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-xl mb-8">
+                    <div class="relative">
+                        <!-- Imagen de la normativa -->
+                        <div class="h-48 overflow-hidden rounded-t-lg">
+                            <img src="Archivos/img/legal.jpg" alt="Aspectos Legales" class="w-full h-full object-cover">
+                        </div>
+
+                        <!-- Overlay opcional para agregar un efecto de color o más opacidad -->
+                        <div class="absolute inset-0 bg-white bg-opacity-30 rounded-t-lg"></div>
+
+                        <!-- Contenido de la normativa -->
+                        <div class="relative z-10 p-4">
+                            <h3 class="text-xl font-semibold mb-4 text-gray-700">Aspectos Legales del Manejo de la
+                                Información</h3>
+                            <p class="text-gray-600 mb-4">Cumple con la normativa vigente en la gestión de datos,
+                                garantizando el cumplimiento de leyes y regulaciones para evitar sanciones.</p>
+                            <!-- Botón -->
+                            <button
+                                class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500 transition-colors duration-300"
+                                data-pdf="Legales.pdf" data-normativa="Aspecto Legal">Leer más</button>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
-            
-            <!-- Normativa 2 -->
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <h3 class="text-xl font-semibold mb-2 text-gray-700">Ley General de Protección de Datos Personales de México</h3>
-                <p class="mb-4 text-gray-600">Breve descripción sobre la Ley General de Protección de Datos Personales y su importancia.</p>
-                <a href="https://www.gob.mx/ifai/documentos/ley-general-de-proteccion-de-datos-personales-en-posesion-de-sujetos-obligados" class="text-blue-600 hover:text-blue-800" target="_blank">Leer más</a>
+        </div>
+
+
+        <!-- Sección de Leyes -->
+        <section id="leyes" class="py-10 bg-gray-100">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">Leyes</h2>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Tarjeta Ley 1 -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-700">Ley General de Protección de Datos
+                            Personales de México</h3>
+                        <p class="text-gray-600 mb-4">Regula el manejo de datos personales por parte de entidades
+                            públicas y privadas, buscando proteger la privacidad de los ciudadanos y asegurar el
+                            tratamiento adecuado de su información.</p>
+                        <button
+                            class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500 transition-colors duration-300"
+                            data-pdf="leyProteccionDatos.pdf" data-normativa="Ley de Protección de Datos">Leer
+                            más</button>
+                    </div>
+
+                    <!-- Tarjeta Ley 2 -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-700">Ley de Propiedad Industrial</h3>
+                        <p class="text-gray-600 mb-4">Protege los derechos sobre invenciones, marcas, y diseños
+                            industriales, promoviendo la innovación y el desarrollo económico mediante la regulación y
+                            protección de la propiedad industrial.</p>
+                        <button
+                            class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500 transition-colors duration-300"
+                            data-pdf="lepPropiedadIndustrial.pdf" data-normativa="Ley de Propiedad Industrial">Leer
+                            más</button>
+                    </div>
+
+                    <!-- Tarjeta Ley 3 -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-700">Ley Federal de Derechos de Autor</h3>
+                        <p class="text-gray-600 mb-4">Regula los derechos de los autores sobre sus obras literarias,
+                            artísticas y científicas, garantizando la protección de sus creaciones y el reconocimiento
+                            de su autoría.</p>
+                        <button
+                            class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500 transition-colors duration-300"
+                            data-pdf="leyDerechoAutor.pdf" data-normativa="Ley de Derechos de Autor">Leer más</button>
+                    </div>
+                </div>
             </div>
-            
-            <!-- Normativa 3 -->
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <h3 class="text-xl font-semibold mb-2 text-gray-700">Ley de Propiedad Industrial</h3>
-                <p class="mb-4 text-gray-600">Breve descripción sobre la Ley de Propiedad Industrial y su relevancia.</p>
-                <a href="https://www.gob.mx/immex/documentos/ley-de-propiedad-industrial" class="text-blue-600 hover:text-blue-800" target="_blank">Leer más</a>
-            </div>
-            
-            <!-- Normativa 4 -->
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <h3 class="text-xl font-semibold mb-2 text-gray-700">Ley Federal de Derechos de Autor</h3>
-                <p class="mb-4 text-gray-600">Breve descripción sobre la Ley Federal de Derechos de Autor y su impacto.</p>
-                <a href="https://www.gob.mx/indautor/documentos/ley-federal-del-derecho-de-autor" class="text-blue-600 hover:text-blue-800" target="_blank">Leer más</a>
-            </div>
-            
-            <!-- Normativa 5 -->
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <h3 class="text-xl font-semibold mb-2 text-gray-700">Código Penal Federal</h3>
-                <p class="mb-4 text-gray-600">Breve descripción sobre el Código Penal Federal y su importancia en la regulación.</p>
-                <a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/8.pdf" class="text-blue-600 hover:text-blue-800" target="_blank">Leer más</a>
-            </div>
-            
-            <!-- Normativa 6 -->
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <h3 class="text-xl font-semibold mb-2 text-gray-700">Estándares del Manejo de la Información</h3>
-                <p class="mb-4 text-gray-600">Descripción breve de los estándares del manejo de la información.</p>
-                <ul class="list-disc ml-5 text-gray-600">
-                    <li><a href="https://www.iso.org/isoiec-27001-information-security.html" class="text-blue-600 hover:text-blue-800" target="_blank">ISO 27001</a></li>
-                    <li><a href="https://www.iso.org/iso-17799-information-security.html" class="text-blue-600 hover:text-blue-800" target="_blank">ISO 17799</a></li>
-                    <li><a href="https://www.isaca.org/resources/cobit" class="text-blue-600 hover:text-blue-800" target="_blank">COBIT</a></li>
-                    <li><a href="https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final" class="text-blue-600 hover:text-blue-800" target="_blank">NIST</a></li>
-                    <li><a href="https://www.axelos.com/best-practice-solutions/itil" class="text-blue-600 hover:text-blue-800" target="_blank">ITIL</a></li>
-                </ul>
-            </div>
-            
-            <!-- Normativa 7 -->
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <h3 class="text-xl font-semibold mb-2 text-gray-700">Aviso de Privacidad</h3>
-                <p class="mb-4 text-gray-600">Texto del aviso de privacidad según lo requerido.</p>
-                <a href="aviso-de-privacidad.html" class="text-blue-600 hover:text-blue-800">Leer más</a>
-            </div>
+        </section>
+
+</section>
+
+<!-- Sección de Código Penal Federal -->
+<section id="codigo" class="w-full bg-gray-200 py-16 min-h-screen flex">
+    <div class="container mx-auto flex flex-col lg:flex-row items-stretch w-full">
+        <!-- Contenido a la izquierda -->
+        <div class="lg:w-1/4 p-8 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
+            <h3 class="text-3xl font-bold mb-4 text-gray-800">Código Penal Federal</h3>
+            <p class="text-gray-700 mb-4">El Código Penal Federal es el conjunto de leyes que regula los delitos y las
+                penas correspondientes en México. Establece las normas y principios para la aplicación de justicia
+                penal, abarcando desde delitos graves como homicidio y robo, hasta delitos menores. Su objetivo
+                principal es mantener el orden público, proteger a las personas y bienes, y garantizar un proceso
+                judicial justo. Este código es fundamental para el sistema de justicia penal del país, asegurando que
+                las acciones ilegales sean sancionadas de manera proporcional y justa.</p>
+        </div>
+        <!-- PDF a la derecha -->
+        <div class="lg:w-3/4 p-8 flex-grow">
+            <iframe src="Archivos/pdf/CPF.pdf" title="Código Penal Federal" class="w-full h-full border-none rounded-md"
+                allowfullscreen></iframe>
         </div>
     </div>
 </section>
+
+
+
+<!-- Modal -->
+<div id="pdfModal" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center">
+    <div
+        class="bg-white w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2 h-4/5 md:h-4/5 lg:h-3/4 xl:h-3/4 p-6 rounded-lg overflow-hidden">
+        <div class="flex justify-between items-center mb-4">
+            <h3 id="modalTitle" class="text-2xl font-bold">Ver Documento</h3>
+            <button id="closeModal"
+                class="bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-red-700 transition-colors duration-300 text-lg font-semibold">
+                Cerrar
+            </button>
+        </div>
+        <div class="relative w-full h-full">
+            <iframe id="pdfViewer" src="" class="absolute inset-0 w-full h-full rounded-lg shadow-lg"
+                frameborder="0"></iframe>
+        </div>
+    </div>
+</div>

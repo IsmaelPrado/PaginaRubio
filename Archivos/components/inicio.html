@@ -1,6 +1,11 @@
+
 <!-- Sección de bienvenida -->
-<section class="bg-blue-800 text-white py-20">
-    <div class="container mx-auto text-center">
+<section class="relative bg-cover bg-center bg-no-repeat text-white py-20" style="background-image: url('Archivos/img/home.jpg');">
+    <!-- Superposición opaca o borrosa -->
+    <div class="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
+    <div class="absolute inset-0 bg-blur-filter z-0"></div>
+
+    <div class="relative container mx-auto text-center p-6 rounded-lg z-10">
         <h1 class="text-4xl font-bold mb-4">Bienvenido a Normateca Digital</h1>
         <p class="text-lg mb-8">Tu recurso integral para normativas y estándares de calidad. Encuentra la información más actualizada y relevante para tu industria.</p>
         <a href="#" data-page="normativas" class="bg-yellow-500 text-gray-800 py-2 px-4 rounded hover:bg-yellow-400 transition nav-link">Explora Normativas</a>
@@ -19,20 +24,20 @@
             <div class="bg-white p-6 rounded-lg shadow-lg">
                 <h3 class="text-xl font-bold mb-4">Leyes y Códigos</h3>
                 <ul>
-                    <li><a href="https://www.gob.mx/senado/documentos/ley-general-de-proteccion-de-datos-personales" class="text-blue-500">Ley General de Protección de Datos Personales de México</a></li>
-                    <li><a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/2.pdf" class="text-blue-500">Ley de Propiedad Industrial</a></li>
-                    <li><a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/1.pdf" class="text-blue-500">Ley Federal de Derechos de Autor</a></li>
-                    <li><a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/4.pdf" class="text-blue-500">Código Penal Federal</a></li>
+                    <li><p class="text-black-500">Ley General de Protección de Datos Personales de México</p></li>
+                    <li><p class="text-black-500">Ley de Propiedad Industrial</p></li>
+                    <li><p class="text-black-500">Ley Federal de Derechos de Autor</p></li>
+                    <li><p class="text-black-500">Código Penal Federal</p></li>
                 </ul>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-lg">
                 <h3 class="text-xl font-bold mb-4">Estándares de Manejo de Información</h3>
                 <ul>
-                    <li><a href="https://www.iso.org/iso-27001-information-security.html" class="text-blue-500">ISO 27001</a></li>
-                    <li><a href="https://www.iso.org/iso-17799-information-technology.html" class="text-blue-500">ISO 17799</a></li>
-                    <li><a href="https://www.isaca.org/resources/cobit" class="text-blue-500">COBIT</a></li>
-                    <li><a href="https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final" class="text-blue-500">NIST</a></li>
-                    <li><a href="https://www.axelos.com/best-practice-solutions/itil" class="text-blue-500">ITIL</a></li>
+                    <li><p class="text-black-500">ISO 27001</p></li>
+                    <li><p class="text-black-500">ISO 17799</p></li>
+                    <li><p class="text-black-500">COBIT</p></li>
+                    <li><p class="text-black-500">NIST</p></li>
+                    <li><p class="text-black-500">ITIL</p></li>
                 </ul>
             </div>
         </div>
@@ -43,19 +48,19 @@
 <!-- Sección de testimonios -->
 <section class="bg-gray-200 py-16">
     <div class="container mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-8">Lo Que Dicen Nuestros Usuarios</h2>
+        <h2 class="text-3xl font-bold mb-8">Algunas Frases Relacionadas . . .</h2>
         <div class="flex flex-wrap justify-center gap-8">
             <div class="bg-white p-6 rounded-lg shadow-lg w-full md:w-1/3">
-                <p class="italic">"Normateca Digital ha sido una herramienta invaluable para nuestra empresa. La información es siempre precisa y está al día."</p>
-                <p class="font-bold mt-4">Cristian Ismael Prado Salazar</p>
+                <p class="italic">"La privacidad no es algo que me importe porque no tengo nada que esconder. Es como decir que no me importa la libertad de expresión porque no tengo nada que decir."</p>
+                <p class="font-bold mt-4">Edward Snowden</p>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-lg w-full md:w-1/3">
-                <p class="italic">"La interfaz es muy amigable y fácil de usar. Hemos encontrado todas las normativas que necesitamos sin ningún problema."</p>
-                <p class="font-bold mt-4">Jassiel Noe Manuel Martínez</p>
+                <p class="italic">"En tiempos de engaño universal, decir la verdad se convierte en un acto revolucionario."</p>
+                <p class="font-bold mt-4">George Orwell</p>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-lg w-full md:w-1/3">
-                <p class="italic">"Excelente servicio al cliente y una plataforma que realmente facilita el acceso a información crítica para nuestra industria."</p>
-                <p class="font-bold mt-4">Anónimo</p>
+                <p class="italic">"El conocimiento es poder. La información es liberadora."</p>
+                <p class="font-bold mt-4">Kofi Annan</p>
             </div>
         </div>
     </div>
