@@ -1,0 +1,87 @@
+<!-- Título de la sección -->
+<section class="bg-blue-800 text-white py-8">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-2">Estándares del Manejo de Información</h2>
+    </div>
+</section>
+
+
+
+<!-- Carrusel de Imágenes -->
+<section class="bg-gray-100 py-12">
+    <div class="container mx-auto">
+        <!-- Carrusel -->
+        <div class="relative" id="carousel">
+            <!-- Contenedor del Carrusel -->
+            <div class="flex overflow-hidden" id="carousel-inner">
+                <!-- Imagen 1: ISO 27001 -->
+                <div id="carousel-item-1" class="flex-shrink-0 w-full lg:w-1/3 px-4 relative bg-cover bg-center" style="background-image: url('Archivos/img/iso27001.png');">
+                    <div class="overlay"></div> <!-- Capa oscura y desenfoque -->
+                    <div class="p-6 relative z-10">
+                        <h3 class="text-xl font-semibold mb-2 text-white">Estándar 1: ISO 27001</h3>
+                        <p class="text-white mb-4">Es una norma internacional para la gestión de la seguridad de la información. Su objetivo principal es proteger la confidencialidad, integridad y disponibilidad de la información dentro de una organización a través de un Sistema de Gestión de Seguridad de la Información (SGSI).</p>
+                        <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500 transition-colors duration-300" data-pdf="iso27001.pdf" data-normativa="Aspecto Ético">Leer más</button>
+                    </div>
+                </div>
+                <!-- Imagen 2: ISO 17799 -->
+                <div id="carousel-item-2" class="flex-shrink-0 w-full lg:w-1/3 px-4 relative bg-cover bg-center" style="background-image: url('Archivos/img/iso-logo.jpg');">
+                    <div class="overlay"></div>
+                    <div class="p-6 relative z-10">
+                        <h3 class="text-xl font-semibold mb-2 text-white">Estándar 2: ISO 17799</h3>
+                        <p class="text-white mb-4">Proporciona buenas prácticas para la gestión de la seguridad de la información, enfocándose en la implementación de controles para proteger la información y utilizada junto con la ISO 27001.</p>
+                        <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500 transition-colors duration-300" data-pdf="iso-17799.pdf">Leer más</button>
+                    </div>
+                </div>
+                <!-- Imagen 3: COBIT -->
+                <div id="carousel-item-3" class="flex-shrink-0 w-full lg:w-1/3 px-4 relative bg-cover bg-center" style="background-image: url('Archivos/img/cobit.png');">
+                    <div class="overlay"></div>
+                    <div class="p-6 relative z-10">
+                        <h3 class="text-xl font-semibold mb-2 text-white">Estándar 3: COBIT</h3>
+                        <p class="text-white mb-4">Un marco para el gobierno y gestión de TI, proporcionando buenas prácticas y directrices para asegurar que los sistemas de TI se alineen con los objetivos empresariales y gestionen los riesgos.</p>
+                        <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500 transition-colors duration-300" data-pdf="cobit.pdf">Leer más</button>
+                    </div>
+                </div>
+                <!-- Imagen 4: NIST -->
+                <div id="carousel-item-4" class="flex-shrink-0 w-full lg:w-1/3 px-4 relative bg-cover bg-center" style="background-image: url('Archivos/img/nist.png');">
+                    <div class="overlay"></div>
+                    <div class="p-6 relative z-10">
+                        <h3 class="text-xl font-semibold mb-2 text-white">Estándar 4: NIST</h3>
+                        <p class="text-white mb-4">Ofrece marcos y estándares para la ciberseguridad, incluyendo el NIST Cybersecurity Framework, que gestiona la ciberseguridad y protege la infraestructura crítica.</p>
+                        <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500 transition-colors duration-300" data-pdf="nist.pdf">Leer más</button>
+                    </div>
+                </div>
+                <!-- Imagen 5: ITIL -->
+                <div id="carousel-item-5" class="flex-shrink-0 w-full lg:w-1/3 px-4 relative bg-cover bg-center" style="background-image: url('Archivos/img/itil.jpg');">
+                    <div class="overlay"></div>
+                    <div class="p-6 relative z-10">
+                        <h3 class="text-xl font-semibold mb-2 text-white">Estándar 5: ITIL</h3>
+                        <p class="text-white mb-4">Un marco para la gestión de servicios de TI que se centra en alinear los servicios de TI con las necesidades del negocio y proporciona directrices para la entrega y soporte efectivos de servicios de TI.</p>
+                        <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500 transition-colors duration-300" data-pdf="itil.pdf">Leer más</button>
+                    </div>
+                </div>
+            </div>
+          
+             <!-- Controles del Carrusel -->
+             <button id="prev" class="carousel-btn absolute top-1/2 left-[-40px] transform -translate-y-1/2 bg-gray-800 text-white p-4 lg:p-6 rounded-full shadow-lg">←</button>
+             <button id="next" class="carousel-btn absolute top-1/2 right-[-40px] transform -translate-y-1/2 bg-gray-800 text-white p-4 lg:p-6 rounded-full shadow-lg">→</button>
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div id="pdfModal" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center">
+    <div
+        class="bg-white w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2 h-4/5 md:h-4/5 lg:h-3/4 xl:h-3/4 p-6 rounded-lg overflow-hidden">
+        <div class="flex justify-between items-center mb-4">
+            <h3 id="modalTitle" class="text-2xl font-bold">Ver Documento</h3>
+            <button id="closeModal"
+                class="bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-red-700 transition-colors duration-300 text-lg font-semibold">
+                Cerrar
+            </button>
+        </div>
+        <div class="relative w-full h-full">
+            <iframe id="pdfViewer" src="" class="absolute inset-0 w-full h-full rounded-lg shadow-lg"
+                frameborder="0"></iframe>
+        </div>
+    </div>
+</div>

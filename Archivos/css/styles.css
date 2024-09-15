@@ -1,6 +1,7 @@
 html, body {
     height: 100%;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -63,6 +64,20 @@ body {
     100% { text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 15px #FFD700, 0 0 20px #FFD700, 0 0 25px #FFD700, 0 0 30px #FFD700; }
 }
 
+/* Definir la animación de agitación */
+@keyframes shake {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-5px); }
+    50% { transform: translateY(5px); }
+    75% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+/* Aplica la animación al botón cuando está visible */
+.scroll-to-top.show {
+    animation: shake 2s ease-in-out infinite;
+}
+
 
 /* Estilo básico del botón de volver arriba */
 .scroll-to-top {
@@ -94,4 +109,120 @@ body {
 .scroll-to-top.show {
     opacity: 1;
     pointer-events: auto;
+}
+
+
+/* Contenedor del contenido */
+.relative {
+    position: relative;
+}
+
+
+/* Estilos para los botones de control */
+/* Estilos para los botones de control */
+#prev, #next {
+    z-index: 100; /* Asegúrate de que los controles están sobre el contenido */
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+}
+
+#prev {
+    left: 10px; /* Mueve el botón de la izquierda más hacia afuera */
+}
+
+#next {
+    right: 10px; /* Mueve el botón de la derecha más hacia afuera */
+}
+
+
+.relative {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Capa oscura y desenfoque */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Oscurece la imagen */
+  
+    z-index: 1; /* Coloca la capa oscura detrás del contenido */
+}
+.flex {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Añadir transición */
+}
+
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+
+#carousel-inner {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    flex-wrap: nowrap; /* Evita el ajuste de línea de los ítems */
+}
+
+#carousel .flex-shrink-0 {
+    flex-shrink: 0;
+    width: 100%; /* Asegúrate de que cada ítem ocupe el 100% del ancho del contenedor */
+    height: 45vh; /* Ajusta la altura si es necesario */
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Necesario para posicionar la capa oscura */
+}
+
+/* Contenido del Carrusel */
+#carousel .relative .p-6 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%; /* Ajusta el ancho según sea necesario */
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro para mejorar la visibilidad del texto */
+    padding: 20px; /* Opcional: Añade padding para el contenido */
+    border-radius: 8px; /* Opcional: Redondea los bordes del contenido */
+    z-index: 10; /* Asegúrate de que esté sobre el overlay */
+}
+
+
+ /* Tamaño y estilo de los botones de navegación del carrusel */
+ .carousel-btn {
+    font-size: 2rem; /* Tamaño de la flecha */
+    width: 50px; /* Ancho del botón */
+    height: 50px; /* Alto del botón */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    animation: bounce 2s infinite; /* Agrega la animación */
+}
+
+/* Animación de rebote */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(0); /* Posición inicial y final */
+    }
+    50% {
+        transform: translateX(-5px); /* Subir el botón */
+    }
+}
+
+/* Aumentar tamaño en pantallas grandes */
+@media (min-width: 1024px) {
+    .carousel-btn {
+        width: 60px;
+        height: 60px;
+    }
 }
